@@ -16,6 +16,7 @@ export default function RootLayout() {
 		<GluestackUIProvider mode={colorMode} config={config}>
 			<Stack>
 				<Stack.Screen name="index" />
+				<Stack.Screen name="suggestion" />
 			</Stack>
 		</GluestackUIProvider>
 	);

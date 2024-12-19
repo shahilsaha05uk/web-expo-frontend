@@ -1,5 +1,4 @@
-import { Heading } from "@/components/ui/heading";
-import { ScrollPage } from "@/components/Page";
+import { ContentPage } from "@/components/Page";
 import { InputText } from "@/components/widgets/InputText";
 import { InputTextArea } from "@/components/widgets/InputTextArea";
 import { Pressable } from "@/components/ui/pressable";
@@ -13,12 +12,8 @@ export default function SuggestionPage() {
 	};
 
 	return (
-		<ScrollPage className="h-full gap-6">
+		<ContentPage title="Suggestion Box!!">
 			<FormControl>
-				<Heading size="3xl" className="mb-5">
-					Suggestion Box!!
-				</Heading>
-
 				<VStack className="gap-5">
 					<InputText placeholder="Name" type="text" />
 					<InputText placeholder="Subject" type="text" />
@@ -28,6 +23,6 @@ export default function SuggestionPage() {
 					</Pressable>
 				</VStack>
 			</FormControl>
-		</ScrollPage>
+		</ContentPage>
 	);
 }

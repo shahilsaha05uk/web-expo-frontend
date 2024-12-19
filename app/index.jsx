@@ -6,8 +6,6 @@ import HomePage from "@/screens/Home";
 import AboutPage from "@/screens/About";
 import { ContentPage, Page, ScrollPage } from "@/components/Page";
 import SuggestionPage from "@/screens/Suggestion";
-import { Platform } from "react-native";
-import { Banner } from "@/components/Banner";
 
 remapProps(Content, {
 	className: "style",
@@ -15,13 +13,13 @@ remapProps(Content, {
 });
 
 export default function App() {
-	return (
-		<ScrollPage>
-			{Platform.OS === "web" && <Banner />}
+	//return <SuggestionPage />;
+	return <AboutPage />;
+}
 
+{
+	/* <ScrollPage>
 			<HomePage />
-			{/* <SuggestionPage /> */}
 			<Footer />
-		</ScrollPage>
-	);
+		</ScrollPage> */
 }

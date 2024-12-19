@@ -9,7 +9,7 @@ export function Heading1({ value }) {
 }
 export function Heading2({ value }) {
 	return (
-		<Heading size="2xl" className="mb-2">
+		<Heading size="2xl" className="mb-3 md:mb-7">
 			{value}
 		</Heading>
 	);

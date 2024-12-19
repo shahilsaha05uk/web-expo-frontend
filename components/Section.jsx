@@ -6,10 +6,7 @@ import { Heading1 } from "./widgets/Headings";
 export function Section({ title, classes, children }) {
 	return (
 		<View className={classNames("py-5", classes)}>
-			{/* <Heading size="3xl" className="mb-2">
-				{title}
-			</Heading> */}
-			<Heading1 value={title} />
+			<Heading1 value={title} className="mb-5" />
 			{children}
 		</View>
 	);
