@@ -9,7 +9,9 @@ export function Content({ style, contentContainerStyle, ...props }) {
 			data={Services}
 			itemDimension={300}
 			spacing={10}
-			renderItem={({ item }) => <ServiceCard details={item} />}
+			renderItem={({ item }) => (
+				<ServiceCard classes="flex-1 shadow-lg" details={item} />
+			)}
 			{...props}
 		/>
 	);

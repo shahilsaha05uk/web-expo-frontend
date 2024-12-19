@@ -1,5 +1,4 @@
-import { Platform, ScrollView } from "react-native";
-import { Box } from "../../ui/box";
+import { Platform, ScrollView, View } from "react-native";
 import { HStack } from "@/components/ui/hstack";
 import { useRef, useState } from "react";
 import { NavLeft, NavRight } from "./Nav";
@@ -56,7 +55,7 @@ export function CarouselCards() {
 	};
 
 	return (
-		<Box className="w-full p-1">
+		<View className="w-full">
 			<ScrollView
 				horizontal={true}
 				style={{ width: "100%" }}
@@ -66,7 +65,7 @@ export function CarouselCards() {
 				onScroll={OnItemScrolled}
 				ref={scrollRef}
 			>
-				<HStack space="md" className="w-full px-4 md:px-0">
+				<HStack space="md" className="w-full">
 					{data}
 				</HStack>
 			</ScrollView>
@@ -79,6 +78,6 @@ export function CarouselCards() {
 				),
 				default: null,
 			})}
-		</Box>
+		</View>
 	);
 }

@@ -43,6 +43,7 @@
     "@gluestack-ui/tooltip": "^0.1.37",
     "@legendapp/motion": "^2.4.0",
     "babel-plugin-module-resolver": "^5.0.2",
+    "classnames": "^2.5.1",
     "expo": "~52.0.19",
     "expo-constants": "~17.0.3",
     "expo-device": "~7.0.1",

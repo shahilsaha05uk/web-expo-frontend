@@ -162,6 +162,8 @@ module.exports = {
 					info: "rgb(var(--color-background-info)/<alpha-value>)",
 					light: "#FBFBFB",
 					dark: "#181719",
+					test: "#5399ec",
+					test2: "#542d12",
 				},
 				indicator: {
 					primary: "rgb(var(--color-indicator-primary)/<alpha-value>)",
@@ -191,6 +193,9 @@ module.exports = {
 				"soft-2": "0px 0px 20px rgba(38, 38, 38, 0.2)",
 				"soft-3": "0px 0px 30px rgba(38, 38, 38, 0.1)",
 				"soft-4": "0px 0px 40px rgba(38, 38, 38, 0.1)",
+			},
+			height: {
+				"[600px]": "600px",
 			},
 		},
 	},

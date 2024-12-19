@@ -129,12 +129,9 @@ export const config = {
 		"--color-outline-950": "26 23 23",
 
 		/* Background */
-		// "--color-background-0": "#89D6FA",
-		// "--color-background-new": "#BAE7FC",
-		//"--color-background-100": "242 241 241",
 		"--color-background-0": "255 255 255",
 		"--color-background-50": "246 246 246",
-		"--color-background-100": "#BAE7FC",
+		"--color-background-100": "242 241 241",
 		"--color-background-200": "220 219 219",
 		"--color-background-300": "213 212 212",
 		"--color-background-400": "162 163 163",

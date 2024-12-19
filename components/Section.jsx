@@ -1,16 +1,22 @@
 import { View } from "react-native";
 import { Heading } from "@/components/ui/heading";
+import classNames from "classnames";
+import { Heading1 } from "./widgets/Headings";
 
-export function Section({ title, children }) {
+export function Section({ title, classes, children }) {
 	return (
-		<View className="mb-5 mt-4 p-2">
-			<View className="mb-3">
-				<Heading size="3xl" className="">
-					{title}
-				</Heading>
-			</View>
-
+		<View className={classNames("py-5", classes)}>
+			{/* <Heading size="3xl" className="mb-2">
+				{title}
+			</Heading> */}
+			<Heading1 value={title} />
 			{children}
 		</View>
 	);
+}
+
+{
+	/* <Heading size="3xl" className="mb-2">
+				{title}
+			</Heading> */
 }

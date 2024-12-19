@@ -1,22 +1,14 @@
-import { View } from "react-native";
 import { Heading } from "@/components/ui/heading";
-
-import { Section } from "@/components/Section";
-import { Box } from "@/components/ui/box";
+import { AboutTxt } from "@/test/AboutTxt";
+import { ScrollContentView } from "@/components/Page";
 
 export default function AboutPage() {
 	return (
-		<Box className="p-2 m-3">
-			<Heading size="2xl" className="bg-background-0">
+		<ScrollContentView className="h-full">
+			<Heading size="3xl" className="mb-5">
 				About Us
 			</Heading>
-			<Heading size="2xl" className="bg-background-300">
-				About Us
-			</Heading>
-			<Heading size="2xl" className="bg-background-100">
-				About Us
-			</Heading>
-			<Heading size="3xl">About Us</Heading>
-		</Box>
+			<AboutTxt />
+		</ScrollContentView>
 	);
 }
