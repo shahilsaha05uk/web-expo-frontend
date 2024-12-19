@@ -29,7 +29,7 @@
 			"expo-router",
 			[
 				"expo-screen-orientation",
-				{ "defaultOrientation": "PORTRAIT", "supportsTablet": true }
+				{ "defaultOrientation": "LANDSCAPE", "supportsTablet": true }
 			]
 		]
 	}

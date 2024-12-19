@@ -56,7 +56,7 @@ export function CarouselCards() {
 	};
 
 	return (
-		<Box className="w-full my-3 p-1">
+		<Box className="w-full p-1">
 			<ScrollView
 				horizontal={true}
 				style={{ width: "100%" }}

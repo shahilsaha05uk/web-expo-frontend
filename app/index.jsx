@@ -1,41 +1,21 @@
-import { Box } from "@/components/ui/box";
-import { Grid, GridItem } from "@/components/ui/grid";
-import { CarouselCards } from "@/components/widgets/CardCarousel/CarouselCards";
-import { ScrollView, Text, View } from "react-native";
+import { Content } from "@/components/Content";
+import { remapProps } from "react-native-css-interop";
+import { ScrollView } from "react-native-virtualized-view";
+import { Footer } from "@/components/Footer";
+import HomePage from "@/screens/Home";
+import AboutPage from "@/screens/About";
+
+remapProps(Content, {
+	className: "style",
+	contentContainerClassName: "contentContainerStyle",
+});
 
 export default function App() {
 	return (
-		<Box className="p-2 m-1 h-full">
-			<ScrollView>
-				<CarouselCards />
-
-				<Grid className="gap-2">
-					<GridItem
-						className="bg-background-800 p-6 rounded-md"
-						_extra={{
-							className: "col-span-4",
-						}}
-					/>
-					<GridItem
-						className="bg-background-800 p-6 rounded-md"
-						_extra={{
-							className: "col-span-4",
-						}}
-					/>
-					<GridItem
-						className="bg-background-800 p-6 rounded-md"
-						_extra={{
-							className: "col-span-4",
-						}}
-					/>
-					<GridItem
-						className="bg-background-800 p-6 rounded-md"
-						_extra={{
-							className: "col-span-4",
-						}}
-					/>
-				</Grid>
-			</ScrollView>
-		</Box>
+		<ScrollView className="p-3">
+			{/* <HomePage /> */}
+			<AboutPage />
+			<Footer />
+		</ScrollView>
 	);
 }

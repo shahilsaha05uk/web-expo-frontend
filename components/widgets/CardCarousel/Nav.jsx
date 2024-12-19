@@ -1,6 +1,6 @@
 import { Pressable } from "react-native";
 import { Icon } from "@/components/ui/icon";
-import { Center } from "../../Center";
+import { Center } from "../Center";
 import { ChevronLeft, ChevronRight } from "lucide-react-native";
 
 export const NavLeft = ({ disabled, onPress }) => {
