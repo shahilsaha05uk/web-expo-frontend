@@ -14,9 +14,15 @@ export default function RootLayout() {
 	const [colorMode, setColorMode] = useState("light");
 	return (
 		<GluestackUIProvider mode={colorMode} config={config}>
-			<Stack>
-				<Stack.Screen name="index" />
-				<Stack.Screen name="suggestion" />
+			<Stack
+				screenOptions={{
+					headerShown: false,
+					contentStyle: {
+						backgroundColor: "#000000", // Sets the background for the screen content
+					},
+				}}
+			>
+				<Stack.Screen name="(app)" />
 			</Stack>
 		</GluestackUIProvider>
 	);

@@ -199,12 +199,10 @@ module.exports = {
 			},
 		},
 		screens: {
-			xs: "480px",
-			sm: "576px",
+			sm: "640px",
 			md: "768px",
-			lg: "992px",
-			xl: "1200px",
-			xxl: "1400px",
+			lg: "1024px", // Applies from 1024px and up
+			xl: "1280px",
 		},
 	},
 

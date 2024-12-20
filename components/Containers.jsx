@@ -32,12 +32,3 @@ export function ContentBlock({ children, title, classes, ...props }) {
 		</View>
 	);
 }
-
-export function ScrollContentBlock({ children, title, classes, ...props }) {
-	return (
-		<ScrollView className={classNames("p-2", classes)} {...props}>
-			{title && <Heading2 value={title} />}
-			{children}
-		</ScrollView>
-	);
-}
