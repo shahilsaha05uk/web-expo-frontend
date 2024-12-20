@@ -1,23 +1,31 @@
-import { Platform, View } from "react-native";
+import { View } from "react-native";
 import classNames from "classnames";
 import { ScrollView } from "react-native-virtualized-view";
 
-export function EmptyContainer({ children }) {
-	return <View>{children}</View>;
-}
-
 export function Page({ children, classes, ...props }) {
 	return (
-		<View
+		<ScrollView
 			className={classNames("flex-1 bg-background-200", classes)}
+			contentContainerStyle={{ flexGrow: 1, paddingBottom: 20 }}
 			{...props}
 		>
-			<ScrollView className="grow" {...props}>
-				{children}
-			</ScrollView>
-		</View>
+			{children}
+		</ScrollView>
 	);
 }
+
+// <View
+// 	className={classNames("flex-1 bg-background-200", classes)}
+// 	{...props}
+// >
+// 	<ScrollView
+// 		contentContainerStyle={{ flexGrow: 1, paddingBottom: 20 }}
+// 		{...props}
+// 	>
+// 		{children}
+// 	</ScrollView>
+// </View>;
+
 {
 	/* <View
 			className={classNames("flex-1 bg-background-200", classes)}

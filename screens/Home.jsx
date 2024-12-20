@@ -1,7 +1,7 @@
 import { CarouselCards } from "@/components/widgets/CardCarousel/CarouselCards";
 import { Content } from "@/components/Content";
 import { Section } from "@/components/Section";
-import { EmptyContainer, Page } from "@/components/Page";
+import { Page } from "@/components/Page";
 import { Platform, View } from "react-native";
 import { Banner } from "@/components/Banner";
 import { Footer } from "@/components/Footer";
