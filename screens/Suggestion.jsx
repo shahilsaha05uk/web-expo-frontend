@@ -6,6 +6,7 @@ import { FormControl } from "@/components/ui/form-control";
 import { ContentBlock } from "@/components/Containers";
 import { Page } from "@/components/Page";
 import { Section } from "@/components/Section";
+
 export default function SuggestionPage() {
 	const OnSubmit = () => {
 		console.log("Submitted");
