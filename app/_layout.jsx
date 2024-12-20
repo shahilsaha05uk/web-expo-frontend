@@ -1,4 +1,4 @@
-import { Stack } from "expo-router";
+import { Slot } from "expo-router";
 import "@/global.css";
 import { useState } from "react";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
@@ -14,16 +14,7 @@ export default function RootLayout() {
 	const [colorMode, setColorMode] = useState("light");
 	return (
 		<GluestackUIProvider mode={colorMode} config={config}>
-			<Stack
-				screenOptions={{
-					headerShown: false,
-					contentStyle: {
-						backgroundColor: "#000000", // Sets the background for the screen content
-					},
-				}}
-			>
-				<Stack.Screen name="(app)" />
-			</Stack>
+			<Slot />
 		</GluestackUIProvider>
 	);
 }

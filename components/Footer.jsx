@@ -3,7 +3,7 @@ import { Heading } from "@/components/ui/heading";
 
 export function Footer() {
 	return (
-		<View className="bg-black p-3 w-full min-h-32">
+		<View className="bg-black p-3">
 			<Heading size="5xl" className="mb-3 color-white">
 				Footer
 			</Heading>

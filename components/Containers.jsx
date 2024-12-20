@@ -23,10 +23,7 @@ export function TextContentBlock({
 
 export function ContentBlock({ children, title, classes, ...props }) {
 	return (
-		<View
-			className={classNames("p-2 md:p-10 my-5 lg:my-auto", classes)}
-			{...props}
-		>
+		<View className={classes} {...props}>
 			{title && <Heading2 value={title} />}
 			{children}
 		</View>
